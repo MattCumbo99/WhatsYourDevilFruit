@@ -16,14 +16,42 @@ export class AppComponent {
 
   constructor(private fruitService: FruitService) {}
 
-  getFruit() {
+  displayFruit(): void {
     this.hideText = false;
 
-    const num_str = Md5.hashStr(this.fruitInfo.firstname).split(/[a-zA-Z]+/).join("");
-    const fruitIndex = Number.parseInt(num_str) % (this.fruitService.wordList.length-1);
-    let fruit = this.fruitService.wordList[fruitIndex];
+    const name_input = this.fruitInfo.firstname;
 
-    this.fruitText = "Your fruit: " + fruit + "-" + fruit + " no mi!";
+    if (this.checkAndSetIfPreset(name_input)) return;
+
+    const num_str = Md5.hashStr(name_input).split(/[a-zA-Z]+/).join("");
+    const fruitIndex = Number.parseInt(num_str) % (this.fruitService.wordList.length-1);
+    const fruit = this.fruitService.wordList[fruitIndex];
+
+    this.fruitText = "You got: " + fruit + "-" + fruit + " fruit!";
+  }
+
+  private checkAndSetIfPreset(name: string): boolean {
+    const preset_check = name.toLowerCase();
+    if (this.fruitService.presets.has(preset_check)) {
+      this.fruitText = "You got: " + this.fruitService.presets.get(preset_check) + "!";
+      return true;
+    }
+
+    return false;
+  }
+
+  private static toCamelCase(str: string): string {
+    if (str == null || str.length == 0) {
+      return str;
+    }
+
+    const words = str.toLowerCase().split(" ");
+
+    for (let i = 0; i < words.length; i++) {
+      words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+    }
+
+    return words.join(" ");
   }
 }
 

@@ -1,0 +1,128 @@
+[
+	{
+		"names":[
+			"Edward Newgate", "Whitebeard", "Shirohige"
+		],
+		"fruit": "Tremor-Tremor fruit"
+	},
+	{
+		"names":[
+			"Monkey D. Luffy", "Luffy", "Mugiwara", "Straw Hat", "Monkey D Luffy"
+		],
+		"fruit": "Rubber-Rubber fruit"
+	},
+	{
+		"names":[
+			"Nico Robin", "Niko Robin"
+		],
+		"fruit": "Flower-Flower fruit"
+	},
+	{
+		"names":[
+			"Akainu", "Sakazuki"
+		],
+		"fruit": "Magma-Magma fruit"
+	},
+	{
+		"names":[
+			"Big mom", "Charlotte Linlin", "Linlin"
+		],
+		"fruit": "Soul-Soul fruit"
+	},
+	{
+		"names":[
+			"Trafalgar D. Water Law", "Law"
+		],
+		"fruit": "Op-Op fruit"
+	},
+	{
+		"names":[
+			"Chopper", "Tony Tony Chopper"
+		],
+		"fruit": "Human-Human fruit"
+	},
+	{
+		"names":[
+			"Emporio Ivankov", "Ivankov"
+		],
+		"fruit": "Hormone-Hormone fruit"
+	},
+	{
+		"names":[
+			"Borsalino", "Kizaru"
+		],
+		"fruit": "Glint-Glint fruit"
+	},
+	{
+		"names":[
+			"Crocodile"
+		],
+		"fruit": "Sand-Sand fruit"
+	},
+  {
+    "names":[
+      "Aokiji", "Kuzan"
+    ],
+    "fruit": "Ice-Ice fruit"
+  },
+  {
+    "names":[
+      "Kaido", "Kaidou"
+    ],
+    "fruit": "Fish-Fish fruit, model: Azure Dragon"
+  },
+  {
+    "names":[
+      "Donquixote Rosinante", "Rosinante"
+    ],
+    "fruit": "Calm-Calm fruit"
+  },
+  {
+    "names":[
+      "Donquixote Doflamingo", "Doflamingo", "Doffy"
+    ],
+    "fruit": "String-String fruit"
+  },
+  {
+    "names":[
+      "Eustass Kid", "Kid"
+    ],
+    "fruit": "Magnet-Magnet fruit"
+  },
+  {
+    "names": [
+      "Yamato"
+    ],
+    "fruit": "Dog-Dog fruit, model: Okuchi-no-Makami"
+  },
+  {
+    "names": [
+      "Buggy"
+    ],
+    "fruit": "Chop-Chop fruit"
+  },
+  {
+    "names": [
+      "Marco"
+    ],
+    "fruit": "Bird-Bird fruit, model: Phoenix"
+  },
+  {
+    "names": [
+      "Bellamy"
+    ],
+    "fruit": "Spring-Spring fruit"
+  },
+  {
+    "names": [
+      "Katakuri", "Charlotte Katakuri"
+    ],
+    "fruit": "Mochi-Mochi fruit"
+  },
+  {
+    "names": [
+      "Charlotte Cracker", "Cracker"
+    ],
+    "fruit": "Bis-Bis fruit"
+  }
+]

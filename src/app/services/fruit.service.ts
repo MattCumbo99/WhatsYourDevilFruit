@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import characters from '../../assets/characters.json';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +10,8 @@ export class FruitService {
   private static WORD_FILE = "nounlist.txt";
 
   private httpClient: HttpClient;
+  presets = new Map<string, string>();
+
   wordList: Array<string> = new Array<string>();
   initialized: boolean;
 
@@ -17,6 +20,7 @@ export class FruitService {
     this.initialized = false;
 
     this.initializeWordList();
+    this.initializePresets();
 
     this.initialized = true;
   }
@@ -31,4 +35,19 @@ export class FruitService {
         }
       });
   }
+
+  private initializePresets(): void {
+    characters.forEach((data: PresetFruit) => {
+      data.names.forEach(name => {
+        this.presets.set(name.toLowerCase(), data.fruit);
+      });
+    });
+  }
+}
+
+export class PresetFruit {
+  constructor(
+    public names: Array<string>,
+    public fruit: string
+  ) { }
 }

@@ -21,7 +21,7 @@
     <form #fruitForm="ngForm">
       <input [(ngModel)]="fruitInfo.firstname" name="firstname" spellcheck="false" type="text" (keydown)="hideText=true">
       <br>
-      <button mat-raised-button color="accent" type="button" (click)="getFruit()">Get My Fruit!</button>
+      <button mat-raised-button color="accent" type="button" (click)="displayFruit()">Get My Fruit!</button>
       <br>
       <div class="fruit-info" [hidden]="hideText">
         {{ fruitText }}
