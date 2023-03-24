@@ -1,0 +1,23 @@
+.title-text {
+  padding: 40px;
+  font-size: 64px;
+}
+.title-subtext {
+  font-size: 32px;
+}
+.fruit-info {
+  padding: 20px;
+  font-size: 20px;
+}
+
+div {
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 12px 20px;
+  width: 15%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
